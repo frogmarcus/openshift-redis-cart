@@ -5,7 +5,8 @@ rm -rf tmp/redis
 mkdir tmp
 set -e
 
-version=${REDIS_BRANCH:-3.2}
+#version=${REDIS_BRANCH:-3.2}
+version="3.2"
 binaries="../../versions/$version/bin"
 
 pushd tmp
