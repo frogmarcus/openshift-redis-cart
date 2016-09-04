@@ -10,7 +10,7 @@ done
 
 mkdir -p $OPENSHIFT_DATA_DIR/.redis/dbs
 
-echo $(pwd)/versions/2.6/bin > env/OPENSHIFT_REDIS_PATH_ELEMENT
+echo $(pwd)/versions/3.2/bin > env/OPENSHIFT_REDIS_PATH_ELEMENT
 
 if ! [ ${REDIS_PASSWORD+x} ]; then
   cat /dev/urandom | head -c${1:-32} | sha256sum | base64 | head -c 40 > env/REDIS_PASSWORD
