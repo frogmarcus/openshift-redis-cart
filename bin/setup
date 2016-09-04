@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+echo -ne 'the goat enters >>  setup start\n'
+
 set -u
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
